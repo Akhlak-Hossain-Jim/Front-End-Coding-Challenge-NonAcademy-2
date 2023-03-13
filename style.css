@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main > h1 {
+  text-align: center;
+  padding: 24px;
+  font-size: 32px;
+}
+main > h1 > a {
+  text-decoration: none;
+  color: #0b574f;
+}
+main .body {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .body .container .canvas {
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: normal;
+  pointer-events: none;
+}
+
+main .body .container .canvas.p2 {
+  background: #243d83;
+}
+main .body .container .canvas.p2 .main-circle {
+  width: 200px;
+  aspect-ratio: 1/1;
+  background: #6592cf;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+main .body .container .canvas.p2 .divider {
+  position: absolute;
+  top: -9px;
+  left: 116px;
+  width: 169px;
+  background: transparent;
+  aspect-ratio: 1/1;
+  border: 20px solid #243d83;
+  border-radius: 50%;
+}
+main .body .container .canvas.p2 .divider.bottom {
+  top: 140px;
+}
+main .body .container .canvas.p2 .divider.left {
+  left: 40px;
+  top: 66px;
+}
+main .body .container .canvas.p2 .divider.right {
+  left: 190px;
+  top: 66px;
+}
